@@ -1,54 +1,9 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vijaya's Portfolio</title>
-
-     .profile-pic {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin-bottom: 20px;
-}
-/* Mobile Design */
-
-@media (max-width: 600px) {
-
-    nav a {
-        margin: 0 5px;
-        font-size: 14px;
-    }
-
-    #home {
-        padding: 70px 15px;
-    }
-
-    #home h1 {
-        font-size: 35px;
-    }
-
-    #home p {
-        font-size: 17px;
-    }
-
-    section {
-        padding: 50px 15px;
-    }
-
-    .skill {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .project {
-        width: 100%;
-        max-width: 350px;
-    }
-
-}
-
-
 
     <style>
         * {
@@ -70,6 +25,7 @@
             text-align: center;
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -91,6 +47,15 @@
             color: white;
         }
 
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+        }
+
         #home h1 {
             font-size: 50px;
             margin-bottom: 10px;
@@ -109,6 +74,10 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #dbeafe;
         }
 
         /* Sections */
@@ -145,6 +114,11 @@
             width: 150px;
             border-radius: 12px;
             box-shadow: 0 4px 12px #ddd;
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
         }
 
         /* Projects */
@@ -161,6 +135,11 @@
             width: 280px;
             border-radius: 12px;
             box-shadow: 0 4px 12px #ddd;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
         }
 
         /* Contact */
@@ -189,6 +168,44 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Mobile Design */
+        @media (max-width: 600px) {
+            nav {
+                padding: 15px 5px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 14px;
+            }
+
+            #home {
+                padding: 70px 15px;
+            }
+
+            #home h1 {
+                font-size: 35px;
+            }
+
+            #home p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 50px 15px;
+            }
+
+            .skill {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .project {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
     </style>
 </head>
 
@@ -203,24 +220,22 @@
         <a href="#contact">Contact</a>
     </nav>
 
-
     <!-- Home -->
     <section id="home">
-           <img src="profile.jpeg.jpg" alt="My Profile Picture" style="width:120px; height:120px; object-fit:cover; border-radius:50%;">
 
+        <img
+            src="profile.jpeg.jpg"
+            alt="Vijaya's Profile Picture"
+            class="profile-pic"
+        >
 
-          <h1>Hello, I'm Vijaya 👋</h1>
+        <h1>Hello, I'm Vijaya 👋</h1>
 
-        <p> 
-
-    Student | Beginner Web Developer | Learning New Things
-
-        </p>
+        <p>Student | Beginner Web Developer | Learning New Things</p>
 
         <a class="button" href="#about">Learn More</a>
 
     </section>
-
 
     <!-- About -->
     <section id="about">
@@ -228,21 +243,17 @@
         <h2>About Me</h2>
 
         <div class="about">
-
             <p>
                 Hello! My name is Vijaya.
                 I am learning web development and this is my first portfolio website.
             </p>
-                 <p>
-    I am currently learning HTML, CSS and JavaScript.
-</p>
 
+            <p>
+                I am currently learning HTML, CSS and JavaScript.
             </p>
-
         </div>
 
     </section>
-
 
     <!-- Skills -->
     <section id="skills">
@@ -270,40 +281,38 @@
 
     </section>
 
- 
-<section id="projects">
+    <!-- Projects -->
+    <section id="projects">
 
-    <h2>My Projects</h2>
+        <h2>My Projects</h2>
 
-    <div class="projects">
+        <div class="projects">
 
-        <div class="project">
-            <h3>My First Website</h3>
-            <p>
-                My first website created while learning HTML and CSS.
-            </p>
+            <div class="project">
+                <h3>My First Website</h3>
+                <p>
+                    My first website created while learning HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Future Project</h3>
+                <p>
+                    I'm currently learning web development.
+                    More projects will be added here soon.
+                </p>
+            </div>
+
         </div>
 
-        <div class="project">
-            <h3>Future Project</h3>
-            <p>
-                I'm currently learning web development.
-                More projects will be added here soon.
-            </p>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
 
         <h2>Contact Me</h2>
 
-        <p>
-            Click the button below to say hello!
-        </p>
+        <p>Click the button below to say hello!</p>
 
         <button class="contact-button" onclick="contactMe()">
             Say Hello
@@ -311,24 +320,15 @@
 
     </section>
 
-
     <!-- Footer -->
     <footer>
-
         <p>© 2026 Vijaya. All Rights Reserved.</p>
-
     </footer>
 
-
-    <!-- JavaScript -->
     <script>
-
         function contactMe() {
-
             alert("Thanks for visiting my website! 😊");
-
         }
-
     </script>
 
 </body>
