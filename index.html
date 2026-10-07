@@ -1,0 +1,334 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+     .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+/* Mobile Design */
+
+@media (max-width: 600px) {
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    #home {
+        padding: 70px 15px;
+    }
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2563eb;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #dbeafe;
+        }
+
+        /* Home */
+        #home {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        #home h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: white;
+            color: #2563eb;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #2563eb;
+        }
+
+        /* About */
+        .about {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 25px;
+            width: 150px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ddd;
+        }
+
+        /* Projects */
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ddd;
+        }
+
+        /* Contact */
+        #contact {
+            background-color: #eaf0ff;
+        }
+
+        .contact-button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+           <img src="profile.jpeg.jpg" alt="My Profile Picture" style="width:120px; height:120px; object-fit:cover; border-radius:50%;">
+
+
+          <h1>Hello, I'm Vijaya 👋</h1>
+
+        <p> 
+
+    Student | Beginner Web Developer | Learning New Things
+
+        </p>
+
+        <a class="button" href="#about">Learn More</a>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                Hello! My name is Vijaya.
+                I am learning web development and this is my first portfolio website.
+            </p>
+                 <p>
+    I am currently learning HTML, CSS and JavaScript.
+</p>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Beginner</p>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Learning</p>
+            </div>
+
+        </div>
+
+    </section>
+
+ 
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>My First Website</h3>
+            <p>
+                My first website created while learning HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Future Project</h3>
+            <p>
+                I'm currently learning web development.
+                More projects will be added here soon.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Click the button below to say hello!
+        </p>
+
+        <button class="contact-button" onclick="contactMe()">
+            Say Hello
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Vijaya. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function contactMe() {
+
+            alert("Thanks for visiting my website! 😊");
+
+        }
+
+    </script>
+
+</body>
+</html>
